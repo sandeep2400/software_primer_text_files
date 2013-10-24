@@ -42,10 +42,26 @@ $git add <filename> - adds a file to the staging area
 	git add *.txt <all text files>
 	git add docs/*.txt <all text files within docs folder>
 	git add docs/   Add all files in the docs directory. 
+
+GIT COMMIT
 $git commit -m "<message for the commit.>"
+- Usually we ADD, then COMMIT a file, but now, a shortcut is to add and commit using the 
+$git commit -a -m "modify readme"
+
+REgreting a  a commit --> use 
+(*)	$git reset --soft HEAD^ {reset the code in the staging area to the last commit before the HEAD - or latest commit}
+(*) $git reset --hard HEAD^ {hard reset - blow away the last commit}
+(*) $git reset --hard HEAD^^ {hard reset - blow away the last TWO commit}
 
 
+FOrgot to add a file to commit --> use 
+(*)	$git add <filename>
+	$it commit --amend -m "<commi message>"
 
+GIT DOES NOT Take care of access control for you. You have to do that yourself. 
+
+	
+_______________________________________________________________
 GIT CHECKOUT
 $git checkout lets you do these: 
 	(1) Check out files (lets you see the old verion of that file )
@@ -85,7 +101,7 @@ $git reset - dangerous way to unde changes to the project.
 *** Never reset public history. it will be like a huge chunk of code just dispappered. Use REVERT when you need to remove the code changes. 
 
 
-$git clean -- COMPLETE
+$git clean -- { remove untracked files from the working repo}
 
 -------------- GIT BRANCHES ----------------------
 GIT branches, unlike SVN branches, are an integral part of your everyday workflow. 
