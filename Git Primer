@@ -88,34 +88,36 @@ GIT REVERT
 
 
 
-$git reset - dangerous way to unde changes to the project. 
+$git reset - dangerous way to undo changes to the project. 
 		- Reset is a permanent undo.
 	*	$git reset <file> 
-		--> remove the specificed file from the staging area. 
+		--> remove the specified file from the staging area. 
 	
 	*	$git reset --hard
-		--> reset the staging area and the working directoy to match the most recent commit. this obliterates all uncommited changes
+		--> reset the staging area and the working directory to match the most recent commit. this obliterates all uncommitted changes
 	
 	*	$git reset <commit> 
-			--> Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone. All changes made since <commit> will reside in the working directory, which lets you re-commit the project history using cleaner, more atomic snapshots.
-*** Never reset public history. it will be like a huge chunk of code just dispappered. Use REVERT when you need to remove the code changes. 
+			--> Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone. All changes made since <commit> will reside in the working directory, which lets you re-commit the project history using 	cleaner, more atomic snapshots.
+*** Never reset public history. it will be like a huge chunk of code just disappeared. Use REVERT when you need to remove the code changes. 
 
 
 $git clean -- { remove untracked files from the working repo}
 
 -------------- GIT BRANCHES ----------------------
-GIT branches, unlike SVN branches, are an integral part of your everyday workflow. 
+GIT branches, unlike SVN branches, are an integral part of your everyday work-flow. 
 - BRANCHES represent an independent line of development
 - each branch is a brand new working directory, staging area and project history 
-- When you want to add a new feature, however big or small, you add a branch. This ensures the main codebase is always secure. 
+- When you want to add a new feature, however big or small, you add a branch. This ensures the main code base is always secure. 
 - Unlike SVN, GIT merges do not happen on a file level, but on the more abstract layer of commits. 
 
 	$git BRANCH
-				- GIT branch lets you create, list, rename and delete branches. It doesn't let you switch between branches or put a forked history back toegther. Tha		
+				- GIT branch lets you create, list, rename and delete branches. It doesn't let you switch between branches or put a forked history back together.		
 		$git branch 
 					--> lists all the branches in a repository. 
 		$git branch <branchname> 
 					--> create a new repository called branchname
+		$git branch -b <branchname> 
+					--> creates a new branch and then checks it out. 			
 		$git branch -d <branch> 
 					--> delete the branch. does not delete a branch if it has unmerged changes. 
 		$git branch -D <branch>
@@ -149,5 +151,18 @@ GIT branches, unlike SVN branches, are an integral part of your everyday workflo
 ---------------------------------------------------------------
 REMOTE repositories: 
 
+Find out whether your local repos are mapped to a remote repo
+$git remote -v 
 
-$git remote
+Map your local repo to a remote repo
+$git remote add <Canonical name of your local repo> 
+
+remove a remote
+$git remote rm <Canonical name of your local repo> 
+
+Push to a local repo
+$git push <canonical name of repo> <branch>
+
+CLONING repos
+$git clone <<remote repo URL>>  <<git-local-name(not reqd)
+
