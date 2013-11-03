@@ -1,0 +1,17 @@
+<?php
+/*
+OOP in PHP Primer
+CLASS define the concept - the idea of a set of things and their  behaviours. 
+Objects are the actual things within the class that contain the data and the 
+Properties are the actions that can be applied to them. 
+How to define a class
+/*
+class <class Name> {
+	//class methods and properties go here. 
+}
+------------------------------------------------------------------------------------------------------------
+After declaring the class you can define a physical manifestation of that class in an object. 
+
+$obj = new <Class Name>;
+var_dump($obj);  
+------------------------------------------------------------------------------------------

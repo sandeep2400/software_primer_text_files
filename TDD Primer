@@ -1,0 +1,6 @@
+TDD Primer
+
+ - TDD Philosophy: coding and testing go hand in hand. 
+ - before writing any code you must first write an automated test for the code. 
+ - the first time you run the test, the test will fail since there is no code, and you keep running the test until the test passes. 
+ - 

@@ -1,0 +1,20 @@
+model view controller
+	- Is an architectural pattern to structure an application. Its not a design language. 
+	- 
+	Ech part of the application miust be separated into 3
+	1) Model: handles data and business logic
+	2) View: present data to the user in any supported format
+	3) Controller: Receive user request and carry them out using the matching resource.s 
+
+
+Why use a framework for model view controller
+	- A typical PHP framework like CAKE or Yii has 3 main directories 
+	App
+	Cake
+	Vendors
+
+Once you get used to your framework, you’ll be able to know where to look for almost any piece of code you need to modify or create. This organization alone makes maintainability a lot easier
+
+
+PHP frameworks lets you create URLS that allow a heirarchy of Models, views, or controllers. So this gives us an elegant url strucutre that is easy to use and maintain. 
+
