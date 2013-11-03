@@ -1,0 +1,19 @@
+NodeJS Primer
+	. Build scalable network applications using JS on the server side. 
+	. Nodejs is built as a wrapper around the V8 runtime engine. 
+	. Superfast because its built in C
+
+What can you build: 
+	. Websocket server {like a chat server - lots of connections a.k.a chat terminals and sockets stay open }	
+	. Fast File upload client. 
+	. Ad Server 
+	. Any real time data apps
+
+WHat it isnt:
+	. Not a web framework
+	. for beginners
+	. not multi-threaded. 
+
+NodejS is non-blocking code. 
+	. The correct functions are kickstarted using CALLback functions
+			

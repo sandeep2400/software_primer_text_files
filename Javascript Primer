@@ -1,1 +1,23 @@
 Javascript Primer
+
+Help with string
+	\t -- TAB
+	\" -- if you need " in a stirng. 
+	\\ == if you need \ in a string.
+	<string>.length -> gives lenght
+	<string>.charAt(n) -> gives variable at (n-1)th character
+
+Variables: 
+	var <var name> = <value>;
+	. Var names cannot have spaces
+	. good var names are kike this goodNameBro {camel case}
+	. Incrementing a var --> var++ or var--
+	if x is var, then {x = x+3} = {x+=3}  
+	similarly {x = x*3} = {x*=3}
+
+	
+JS in HTML: 
+<head>
+	<script src = "scripts<xxx.js"></script>
+</head>
+
