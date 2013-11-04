@@ -1,0 +1,29 @@
+How to create a cloud service in Azure. 
+	1) Launch the Windows azure powershell 
+			PS C:\>New-AzureServiceProject myProject
+	2)  Create a worker role (for simple PHP script) or a webrole (for a website) - A worker is best suited for a back-end script that will continue to run and needs to be amnually stopped. A webrole is best for an interactive website. 
+		PS C:\myProject> Add-AzurePHPWebRole roleName  OR
+		PS C:\myProject> Add-AzurePHPWorkerRole roleName
+
+	3) Add the scripts inside the folder for the worker/web role. 
+
+	4) You can test the scripts with the Azure emulator by running these commands: 
+		PS C:\MyProject> Start-AzureEmulator and PS C:\MyProject> Stop-AzureEmulator
+
+	5) Retrieve the online PUBLISH SETTINGS file by running this command: 
+		Get-AzurePublishSettingsFile
+
+	6) Import it into your folder 
+		Import-AzurePublishSettingsFile and <file path>
+
+	7) Publish the cloud service by running 
+		PS C:\app\MyService> Publish-AzureServiceProject
+
+	8) You can start and stop the script by rinning 	
+		 Start-AzureService or Stop-AzureService
+
+References: 
+- http://www.windowsazure.com/en-us/develop/php/common-tasks/create-web-and-worker-roles/#Emulators
+- http://www.windowsazure.com/en-us/develop/php/how-to-guides/powershell-cmdlets/#Deploy
+- http://www.windowsazure.com/en-us/develop/php/how-to-guides/powershell-cmdlets/#Deploy
+- http://msdn.microsoft.com/en-us/library/windowsazure/jj152830.aspx
