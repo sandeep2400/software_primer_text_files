@@ -53,5 +53,68 @@ when you create a demo project you will notice a PROTECTED folder which contains
 
 *Models in the demo project: Models are usually for DB access, but in the demo, there are no demos, only web forms. The loginform class extends the CFormModel whiih creates the user id for username and pwd. 
 
+### Creating your Own Project ###
+#### Create a database for your project. 
+Think of the relational model you will have for your project. Create a table with prim and foregin keys that you need. Use mYSQL workbench of needed to design and view the graphical representation of a relational mode. 
+
+#### Run Yiic Shell oe Gii. 
+When the DB is ready, set the connection in the config file in 
+```
+yourProject/protected/config/main.php
+```
+What's in congif/main: 
+	* Auto Loads the component and the models classes. 
+	* sets the default controller to post. 
+	* Provides the DB connection string to the connectionString variable. 
+	* Provides the DB connection string to the MYSQL database. 
+	* Write an error handler and a URL handler. 
+Important: Then go to the YII web root folder and using the command line call the 'yiic Shell' -> it will launch the Yii Console and 
+* You can create a MODEL for the <table> using a command lime 
+```
+model tablename or for all tables like model *
+```
+You can also use 
+```
+crud tablename
+```
+to generate administration of your tables. 
+
+####Gii
+The Gii website is the web-manifestation of the Yiic CLI. It lets you generate models & controllers without using the CLI. 
+You launch it by uncommenting the lines of code in PROTECTED/CONFIG/MAIN.PHP and launching the website at 
+```
+localhost/myproject/index.php?r=gii
+```
+#### How to create your own Controller: 
+*Create your controllers here:  protected/controllers. 
+* The first name of the controller msut be the first name of the Controller in uppercase. , especially for linux servers/ 
+* Lets say you want to create a controller called myfirst. 
+* Typically, here is the code inside a controller. 
+```
+<?php
+class MyfirstController extends Controller //class extends the controller function, 
+{
+	public function actionMyaction(){
+	//will list some acton for this controller. 
+		$this->render ('myview');
+		}
+	public function actionIndex(){
+		//woll list code for this action 
+	}	
+}
+?>
+```
+*Controller is a class that contains definitions of action and non-action functions. 
+* The default action is the actionIndex () function. It is executed when no other action is in the R router int he URL  
+* to invoke the Myaction action, you would make the URL like this: 
+```
+?r=Myfirst/Myaction
+```
+What this will do is: 
+```
+$this-> render('myView)
+```
+
+
 
 
