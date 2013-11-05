@@ -1,0 +1,17 @@
+NoSQL Primer
+	Key Value Stores
+		Redis
+		riak
+		Project voldemort
+
+	Document stores
+		RavenDB
+		MongoDB
+		CouchDB
+
+	COlumn-family: 
+		Cassandra
+		Apache HBase
+
+	Graph databases
+		Neo4j
