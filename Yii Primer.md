@@ -6,19 +6,19 @@
 * Addresses have a special importance in MVC frameworks -> They include parameters which specify WHICH controller is to be used. 
 * You will have multiple controllers for each action and each controller will act on a different piece of the puzzle. 
 *A typical web address when you use a controller is this: 
-~~~
+```
 www.myweb.com/index.php?r=myController
 r = router to a controller named myController
 In Yii, all navigation through the index.php file and r does all the routing to the right controllers. 
-~~~
-#### Action ####
+```
+#### Action 
 * Controllers can have one or more sub-controllers called actions. If a Controller has 1 or more actions, you need to specify that in the r parameter. 
 Exampe: 
-~~~
+```
 www.myweb.com/index.php?r=myController/myAction 
 or we can rewrite this as: 
 www.myweb.com/index.php?r=users/myAction 
-~~~
+```
 All controllers must have a default action, and in the absence of an action, it will fall to the default. 
 
 ###Model###
@@ -51,7 +51,7 @@ View has no intelligence. It simply reads data from Controller and displays it.
 ### Yii Demo Project ###
 when you create a demo project you will notice a PROTECTED folder which contains MVC folders. 
 
-
+*Models in the demo project: Models are usually for DB access, but in the demo, there are no demos, only web forms. The loginform class extends the CFormModel whiih creates the user id for username and pwd. 
 
 
 
