@@ -115,6 +115,21 @@ What this will do is:
 $this-> render('myView)
 ```
 
+### How to create a blog on Yii
+1. Create a demo blog on your webroot by using the command shell yiic program in the yiiroot\frameworks folder. 
+```
+C:\xampp\htdocs> yiiroot\framework\yiic webapp <app name> {in this case 'blogroll'}
+```
+2. The Blogroll folder and assets will be created in the htdocs folder. 
+3. Now create your data model. While this is easier said than done at this stage, and there is a good chance that I will change the data model later on, its good to get one going. 
+4. If you have created a model on Mysql or sql lite, just add the connection string to the \config\main.php file. In this file you can unlock the Gii Tool. 
+5. The Gii tool is a web tool that can create all the controllers, views and models that my application will need
+6. Or you can use the command line tool 'yiic shell' in the <application>\<protected> folder. 
+7. 
 
-
-
+Post Id
+Author
+Title
+Date
+Content
+Keywords

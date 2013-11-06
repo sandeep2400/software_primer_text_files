@@ -1,0 +1,18 @@
+#Yii Primer#
+## MVC Architecture ##
+### Controllers ###
+* Controller is initialted whenever you request a page. 
+* A controller canr ead data from POST, GET or SESSION values. 
+* Addresses have a special importance in MVC frameworks -> They include parameters which specify WHICH controller is to be used. 
+* You will have multiple controllers for each action and each controller will act on a different piece of the puzzle. 
+*A typical web address when you use a controller is this: 
+~~~
+www.myweb.com/index.php?r=myController
+r = router to a controller named myController
+In Yii, all navigation through the index.php file and r does all the routing to the right controllers. 
+~~~
+#### Controllers ####
+
+
+
+

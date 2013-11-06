@@ -53,5 +53,11 @@ echo $methobj->getProperty(); //get the property value
 
 //Constructors and destructors: 
 //Constructors are functions that are initiated right of the bat, 
+// 
+
+/*
+Each class should be written to it's own file. This way, each file will contain 1 class and all the data and the methods 
+associated with the file. 
+
 
 ?>
