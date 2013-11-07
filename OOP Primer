@@ -50,7 +50,7 @@ class myKlass{
 
 	private function() Braking{
 	//method code here  - function can be called by other methods in the class
-	}
+		}
 
 	private function() Valuation {
 	//method code here. - function can be called by methods in the class or in Inherited classes. 
@@ -110,15 +110,42 @@ Destructors are called just before the object is deleted.
 
 ##Static properties and Methods. 
 1. These are class properties that are not tied to any method. 
-2. Lets say you want to create a variable that's accessible inside a Method but not tied it to any object. you can do that by declaring a property as Static. 
+2. Lets say you want to create a variable that's accessible inside a Method but not tied it to any object. you can do that by declaring a property as Static. They are useful when you want to create a Persistent value between the objects but dont want to tie it to an object. 
+
 ```
 Example: lets say in the method Accleration, you want to create a property called $speedLimit. You can do that like this: 
 class Automobilia{
 	public static $speedLimit = 65mph;
 }
+```
+3. You can display the value of a static property or access it by using this notation
+```
+echo Automobilia::$speedLimit;
+or echo <classname>::<static property name>;
+```
+4. Similarly, the value of the static-property can be changed inside the class by writing 
+```
+class Automobilia{
+	public static $speedlimit - 65mph;
+//code here
+	private function Acceleration(){
+	self::$speedlimit++;
+}
+```
+IMPORTANT: We usually refer to properties as <objname>-><property_name> ($mycar1->speed) outside of a class and $this-><property> inside a class. 
+Since static properties are not connected to any object, we refer to them as <className>::<static_property> (autoMobilia::$speed_limit outside the class and <self>::<static_property> (self::$speedLimit) inside the class.
 
+5. You can also create static methods. Similar to the properties, you can create static methods in the class w/o them being tied to an object. Useful when you want to create a function w/o necessarily creating an object. You can access these functions outside of the class by: 
+```
+<className>::<functionName>   or
+autoMobilia::speedVariation();
+```
+6. You can also define Constant values in the class itself. you use the "const <variableName> = <value>;"
+```
+const $upperSpeedLimit = 60mph;
+```
 
-
+6. 
 ## Type Hinting: 
 1. restricting the types of objects that can be passed to the method. 
 
