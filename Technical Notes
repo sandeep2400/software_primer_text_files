@@ -1,0 +1,24 @@
+#Technical notes: #
+
+* [Developing Ubuntu Apps](http://developer.ubuntu.com/apps/qml/get-started/)
+
+### Hadoop ###
+* http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html#Single_Node_Setup Single note setup. 
+* [Apache Hadoop Core](http://www.apache.org/dyn/closer.cgi/hadoop/core)
+* [Google File system](http://en.wikipedia.org/wiki/Google_File_System)
+* [Single node cluster](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/)
+
+## NO Sql Databases ##
+### Document DBs ###
+* [Rethink Db](http://www.rethinkdb.com/)
+
+## Frameworks ##
+* [Fuel PHP](http://fuelphp.com/features)
+
+### Infrastructure management ### 
+* [Puppet labs](http://puppetlabs.com/puppet/what-is-puppet)
+* Chef
+
+### Web Scraper ###
+* [Scraper Wiki](https://scraperwiki.com/dataset/agqdz6q)
+

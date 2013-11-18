@@ -1,0 +1,17 @@
+# SSL Primer
+1. SSL is Secure Socket Layers 
+2. SSL is a process so that data passed between the user and the server is encrypted/decrypted so that no external 3rd party can hijack the connection. 
+3. SSL acts as a digital passport which verifies the credentials of both yourself and the end web server. When both parties are verified, SLL grants a secured connection through HTTPS. This process is performed using CERTIFICATES. 
+
+## SSL certificate includes: 
+1. Owner's Name
+2. Certificate's serial number used for identification
+3. The certificate's expiration date
+4. The Ceritifcate's public key used to encrypt information. 
+5. The ceritificate's private key used to decrypt information (usually from a web server). 
+
+6. Some certificates will have more information. None of this affects the end user; it only affects the conneciton between the server and remote computer. 
+
+See [Link](http://www.hongkiat.com/blog/ssl-certs-guide/) for more information. 
+
+

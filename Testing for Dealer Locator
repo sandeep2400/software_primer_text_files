@@ -1,0 +1,27 @@
+Testing for Dealer Locator
+Requirements & Matching test cases: 
+(*) Read dealer lat & lng values from a database
+	(1) Read/Connect to the database fails 
+	(2) Read from the database fials 
+
+(*) Place those values on a webpage generated from google maps
+	- Values are placed correctly on the webpage
+	- Google maps connection is broken
+	- Are the pins displayed correctly on the map
+
+
+(*) List the associated dealer information by state
+	- WHere is this web page/ 
+
+(*) Flag on any dealer with an address that doesn't match the associated lat & lng value
+	- Dealer does not have 
+
+(*) Flag on any dealer missing lat & lng values
+	- What if dealer is missing Lat and Long values
+	- What if dealer is missing Lat OR long values
+	- What if the dealer has both lat and long values. 
+
+
+(*) Update those missing values using the google geolocation api
+	Test 5 missing geolocation hits and see the data.
+	C

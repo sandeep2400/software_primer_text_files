@@ -130,7 +130,7 @@ GIT branches, unlike SVN branches, are an integral part of your everyday work-fl
 		- When you want to start a new feature, you create a new branch, and then checkout the master code into the latest branch with git checkout. 
 		- lets you navigate between the branches created by GIT BRANCH. Checking out a branch updates the files in the working directory to match the version stored in that branch. and it tells GIT to record all new commits on that branch. 
 
-		$git checkout <exisitng branch-name> - checks out said branch. 
+		$git checkout <exisitng branch-name> -gt checks out said branch. 
 		
 		$git checkout -b <new branch> - creates and checks out new branch. 
 
